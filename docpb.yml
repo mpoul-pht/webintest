@@ -1,0 +1,13 @@
+- name: Run using a project directory
+  hosts: mpoulsandbox
+  connection: local
+  gather_facts: no
+  tasks:
+
+    - docker_service:
+        project_src: compose
+        scale:
+          php: 10
+      register: output
+
+
