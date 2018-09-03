@@ -1,5 +1,5 @@
-- name: Run using a project directory
-  hosts: mpoulsandbox
+- name: deploy docker-compose with random mysql query
+  hosts: localhost
   connection: local
   gather_facts: no
   tasks:
